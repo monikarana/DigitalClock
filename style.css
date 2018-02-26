@@ -62,5 +62,6 @@
 #minute,
 #second {
     transform-origin: 300px 300px;
-    transition: transform .5s ease-in-out;
+    /* responsible for smooth animation and set the second/minute/hour hand back to 0 degree*/
+    /* transition: transform .5s ease-in-out; */
 }
