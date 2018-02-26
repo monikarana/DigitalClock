@@ -3,7 +3,7 @@ const MINUTEHAND = document.querySelector("#minute");
 const SECONDHAND = document.querySelector("#second");
 
 
-
+function reunTheClock() {
 var date = new Date();
 console.log(date);
 
@@ -21,3 +21,6 @@ let secPosition = sec * 360/60;
 HOURHAND.style.transform = "rotate(" + hrPosition + "deg)";
 MINUTEHAND.style.transform = "rotate(" + minPosition + "deg)";
 SECONDHAND.style.transform = "rotate(" + secPosition + "deg)";
+}
+
+var interval = setInterval(reunTheClock, 1000);
